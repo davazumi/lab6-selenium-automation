@@ -1,12 +1,24 @@
-# Лабораторная работа №6
+# Автоматизация тестирования поиска Яндекс
 
-Автоматизация тестирования веб-форм с Selenium WebDriver, POM и Allure.
+Проект по автоматизации UI-тестирования с использованием Python, Selenium WebDriver, паттерна Page Object Model (POM) и системы отчетности Allure.
 
-## Установка
-pip install -r requirements.txt
+## 🛠 Технологический стек
+- **Python 3.10+** — язык программирования.
+- **Selenium WebDriver** — автоматизация действий браузера.
+- **Pytest** — фреймворк для написания и запуска тестов.
+- **Pytest-xdist** — плагин для параллельного запуска тестов.
+- **Allure Framework** — генерация наглядных отчетов.
+- **Page Object Model** — паттерн проектирования для удобства поддержки тестов.
 
-## Запуск
-pytest tests/test_yandex_form.py -v
-pytest tests/test_yandex_form.py -n 2 -v
-pytest --alluredir=allure-results
-allure serve allure-results
+## 📂 Структура проекта
+- `pages/` — Page Object классы (локаторы и методы работы со страницами).
+- `tests/` — тестовые сценарии.
+- `conftest.py` — фикстуры Pytest (настройка драйвера и браузера).
+- `pytest.ini` — конфигурация фреймворка.
+
+## 🚀 Установка и запуск
+
+1. Клонируйте репозиторий и перейдите в папку:
+   ```bash
+   git clone https://github.com/davazumi/lab6-selenium-automation.git
+   cd lab6-selenium-automation
